@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&family=Yellowtail&display=swap');
+
+:root {
+    font-size: 62.5%;
+    --salmon: #E07A5F;
+    --aqua: #81B29A;
+    --yellow: #F2CC8F;
+    --gray: #D4D4D4;
+    --cream: #F4F1DE;
+    --lightblue: #EFF6F1;
+    --darkgray: #525C60;
+    --white: #ffffff; 
+}
+
+/* Start of main navigation */
+
+/* LOGO */
+nav img {
+    width: 200px;
+}
+
+#menu {
+    display: flex;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+nav menu li {
+    list-style: none;
+    margin-right: 65px;
+    font-weight: 400;
+}
+
+nav menu button + menu li {
+    margin-right: 0px;
+    font-weight: 400;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;  
+    font-weight: 400;
+}
+
+header nav menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+}
+
+header nav {
+    background-color: white;
+    padding: 30px; 
+}
+
+menu li button a {
+    font-weight: 400;
+    text-decoration: none;
+
+}
+
+header nav menu li button {
+    background-color: var(--white);
+    border: none;
+    color: var(--salmon);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+}
+
+nav .button-primary:hover {
+    outline-color: var(--salmon);
+    outline-width: 3px;
+    outline-style: solid;
+    cursor: pointer;
+    color: var(--salmon);
+    text-decoration: none;
+}
+
+header nav menu button::after {
+    content: '\25BE';
+    padding-left: 5px;
+}
+
+header nav menu li menu li {
+    padding: 5px;
+}
+
+header nav menu li a {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--salmon);
+}
+
+header nav menu button {
+    background: none;
+    cursor: pointer;
+    padding: 0px;
+}
+
+header nav menu button:hover, header nav menu li a:hover {
+    color: var(--aqua);
+}
+
+/*apply this style to a menu with a sibling of button when the li ancestor is being hovered on that has an ancestor of menu and nav*/
+    
+header nav menu li:hover button + menu {
+    display: block;
+    position: absolute;
+    background-color: var(--white);
+    color: var(--salmon);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+header nav menu menu {
+    display: none;
+}
+    
+header nav {
+    flex-wrap: wrap;
+    padding: 0px;
+    padding-bottom: 25px;
+}
+
+
+
+/* Categories section */
+
+main {
+    background-color: #E07A5F;
+    padding: 4%;
+}
+
+.row1, .row2, .row3, .row4 {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+.row-1, .row-2, .row-3, .row-4 {
+    margin-right: 30px;
+}
+
+article {
+    display: block;
+}
+
+article img {
+    width: 400px;
+}
+
+.Categories, {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.Categories h2 {
+    color: var(--cream);
+    font-family: 'Roboto', sans-serif;
+    align-items: flex-start;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.Categories h1 {
+    color: var(--cream);
+    font-family: 'Yellowtail';
+    font-size: 4.5rem;
+    margin: 3;
+    text-align: center;
+}
+
+/*footer */
+
+footer {
+    background-color: var(--yellow);
+    color: var(--darkgray);
+
+}
+
+footer nav {
+    width: 80%;
+    margin: auto;
+    padding: 60px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;  
+    font-weight: 400;
+}
+
+footer nav li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+footer nav>menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: top;
+}
+
+footer nav>menu li menu {
+    padding: 0px;
+}
+
+footer p {
+    font-size: 14px;
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+footer nav h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--salmon);
+}
+
+footer nav h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--salmon);
+}
+
+footer nav li a {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: var(--darkgray);
+}
+
+footer span {
+    text-align: center;
+    display: block;
+}
+
+footer nav menu button:hover, footer nav menu li a:hover {
+    color: var(--aqua);
+}
+
+@media (max-width: 1180px) {
+    .hidden-mobile {
+        display: none;
+    }
+    }
+    
+    #mobile-menu-button {
+        display: none;
+    }
+    
+    #mobile-menu-button img {
+        width: 100px;
+    }
+    
+    @media (max-width: 1170px) {
+        #mobile-menu-button {
+            display: block;
+           
+        } 
+    #menu menu {
+       display: none;
+    }
+    }
+
+    @media (max-width: 1180px) {
+        mobile-menu-button {
+            text-align: center;
+            display: block;
+        }
+        }
+        
+        @media (max-width: 1250px) {
+            header nav .button-primary {
+                display: none;
+                }
+            }
+            
+            @media (max-width: 1040px) {
+            header nav > menu {
+                flex-direction: column;
+                background-color: var(--white);
+                width: 100%;
+                align-items: start;
+            }
+            }
+        
+        
+        @media (max-width: 1180px) {
+        header nav>menu {
+            padding: 0px;
+            flex-direction: column;
+            background-color: var(--dark-blue);
+            margin: 0px;
+            align-items: flex-start;
+            width: 100%;
+            position: absolute;
+            top: 106px;
+            z-index: 1;
+        }
+        }
